@@ -7,3 +7,9 @@ vim.keymap.set("n", "<leader>ve", ":e $MYVIMRC<cr>", { desc = "Open parent direc
 vim.keymap.set("n", "<leader>vs", ":source $MYVIMRC<cr>", { desc = "Open parent directory" })
 
 vim.keymap.del("n", "<leader>l")
+
+-- Bufferline
+vim.keymap.del("n", "[b")
+vim.keymap.del("n", "]b")
+vim.keymap.set("n", "[b", "<cmd>BufferLineMovePrev<CR>")
+vim.keymap.set("n", "]b", "<cmd>BufferLineMoveNext<CR>")
