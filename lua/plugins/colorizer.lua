@@ -6,5 +6,6 @@ return {
     "javascript",
     "html",
     "scss",
+    "md",
   },
 }
