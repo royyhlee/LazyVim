@@ -7,5 +7,6 @@ return {
     "html",
     "scss",
     "md",
+    "toml",
   },
 }
