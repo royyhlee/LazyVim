@@ -48,15 +48,22 @@ return {
     --   config = bar
     --   end,
   },
+
   {
     "miikanissi/modus-themes.nvim",
     config = function()
       require("modus-themes").setup({
-        style = "modus_vivendi",
-        -- style = "modus_operandi",
+        style = "modus_operandi", -- modus_vivendi, modus_operandi
+        variant = "tritanopia", -- deuteranopia, tinted, tritanopia
+        on_colors = function(colors)
+          colors.bg_main = "#e4e4e4"
+          colors.bg_dim = "#d4d4d4"
+          colors.fg_main = "#262626"
+        end,
       })
     end,
   },
+
   {
     "LazyVim/LazyVim",
     opts = {
