@@ -20,6 +20,9 @@ vim.opt.foldtext = "v:lua.vim.treesitter.foldtext()"
 -- Default border style for windows
 vim.opt.winborder = "single"
 
+-- Enable borders for split windows
+vim.opt.fillchars:append({ vert = "│", horiz = "─", vertleft = "┤", vertright = "├", verthoriz = "┼" })
+
 vim.opt.relativenumber = false
 
 -- local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
